@@ -10,6 +10,11 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ProjectPatron v0.2.2 (WebGL).json", {onProgress: UnityProgress});
+UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%", {
+    Module: {
+        "webglContextAttributes": {"preserveDrawingBuffer": true},
+    }
+});
     </script>
 </head>
 <body>
