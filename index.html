@@ -6,7 +6,11 @@
     <title>Unity WebGL Player | Project Patron</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      UnityLoader.instantiate("unityContainer", "Build/ProjectPatron v0.3.2 (WebGL).json");
+UnityLoader.instantiate("unityContainer", "Build/ProjectPatron v0.3.2 (WebGL).json", {
+     Module: {
+         "webglContextAttributes": {"preserveDrawingBuffer": true},
+     }
+ });
     </script>
   </head>
   <body>
